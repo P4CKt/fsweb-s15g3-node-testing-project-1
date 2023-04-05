@@ -9,8 +9,8 @@ Forklayın, clone'layın ve bolca pushlayın...
 ### Görev 2: MVP
 
 - [+] Görev 1-7 `index.js` içinde:
-- [ ] Testlerinizi `index.test.js` dosyasına yazın.
-- [ ] Fonksiyonları `index.js` içine ekleyin.
+- [+] Testlerinizi `index.test.js` dosyasına yazın.
+- [+] Fonksiyonları `index.js` içine ekleyin.
 
 #### Notlar
 
