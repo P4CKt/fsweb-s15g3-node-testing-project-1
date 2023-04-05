@@ -8,7 +8,7 @@ Forklayın, clone'layın ve bolca pushlayın...
 
 ### Görev 2: MVP
 
-- [ ] Görev 1-7 `index.js` içinde:
+- [+] Görev 1-7 `index.js` içinde:
 - [ ] Testlerinizi `index.test.js` dosyasına yazın.
 - [ ] Fonksiyonları `index.js` içine ekleyin.
 
@@ -27,7 +27,6 @@ Forklayın, clone'layın ve bolca pushlayın...
 - Çözümünüzde, en iyi yöntemleri izlemeniz, temiz ve profesyonel sonuçlar üretmeniz çok önemlidir.
 - Çalışmanızı gözden geçirmek, iyileştirmek ve değerlendirmek için zaman planlayın.
 - Çalışmanızda yazım denetimi ve dilbilgisi denetimi de dahil olmak üzere temel profesyonel kontrol işlemlerini gerçekleştirin.
-
 
 ## Kaynaklar
 
