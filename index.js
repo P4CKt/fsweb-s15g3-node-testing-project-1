@@ -123,7 +123,7 @@ function Araba(isim, depo, kml) {
 
   this.odometer = 0; // araba 0 kilometrede yüklenecek
   this.depo = depo; // araba full depoyla yüklenecek
-  this.depo <= 20;
+
   // ✨ gerekli propları ekleyin
   this.isim = isim;
   this.kml = kml;
@@ -165,8 +165,13 @@ function Araba(isim, depo, kml) {
    * focus.benzinal(99) // 600 döndürür (depo yalnızca 20 litre alabiliyor)
    */
   this.benzinal = (litre) => {
-    this.depo += litre;
-    return depo * this.kml;
+    if (this.depo + litre < depo) {
+      this.depo += litre;
+      return this.depo * this.kml;
+    } else {
+      this.depo = depo;
+      return depo * this.kml;
+    }
   };
 }
 const focus = new Araba("focus", 20, 30);
@@ -178,7 +183,7 @@ const focus = new Araba("focus", 20, 30);
 // console.log(focus.sur(200)); // 600 döndürür (100 km sonra benzin bitti)
 // console.log(focus.sur(200)); // 600 döndürür (100 km sonra benzin bitti)
 
-console.log(focus.sur(600)); // 600 döndürür
+console.log(focus.sur(10000)); // 600 döndürür
 console.log(focus.sur(1)); // 600 döndürür (depo boş olduğundan yol gidilemedi)
 console.log(focus.benzinal(99)); // 600 döndürür (depo yalnızca 20 litre alabiliyor)
 /**
